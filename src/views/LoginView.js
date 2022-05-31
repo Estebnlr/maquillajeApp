@@ -17,9 +17,8 @@ export default function LoginView() {
 
   return (
     <div>
-      <h1 className='mb-3'>Ingresa con Google!</h1>
       <button className='btn btn-danger btn-lg' onClick={loguear}>
-        Ingresa
+      <i class="fa-brands fa-google"></i> Continuar con Google
       </button>
     </div>
   )
