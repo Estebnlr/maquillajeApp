@@ -16,14 +16,14 @@ export default function FavoritosView() {
             <div className="card mb-3" key={i}>
               <div 
                 className="row" 
-                style={{ maxHeight: "200px", overflow:'hidden' }}
+                style={{ maxHeight: "300px", overflow:'hidden' }}
               >
                 <div className="col-md-4">
                   <img
                     src={item.prod_img}
                     className="d-block w-50"
                     alt={item.prod_nom}
-                  />guk
+                  />
                 </div>
                 <div className="col-md-8">
                   <div className="card-body">

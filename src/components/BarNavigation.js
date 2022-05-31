@@ -31,13 +31,7 @@ export default function BarNavigation() {
          
           </Link> 
           <Nav>
-          {user ? (
-                <Link className="nav-link" to="/favoritos">
-                  <Badge badgeContent={favoritos.length} color="secondary">
-                    <i className="fa-solid fa-cart-shopping" /> 
-                  </Badge>
-                </Link>
-              ) : null}
+        
             {user ? (
              
               <NavDropdown
@@ -60,6 +54,13 @@ export default function BarNavigation() {
                 <i className="fa-solid fa-user-large" /> Ingresa
                 </Link>
             )}
+              {user ? (
+                <Link className="nav-link" to="/favoritos">
+                  <Badge badgeContent={favoritos.length} color="primary">
+                    <i className="fa-solid fa-cart-shopping" /> 
+                  </Badge>
+                </Link>
+              ) : null}
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -1,12 +1,15 @@
 
 
 .card-img-top {
-    max-height: 200px;
+    min-height: 100%;
+    min-width: 100%;
     object-fit: cover;
 }
 
+.card-xd:hover {
 
-
+            transform: scale(1.05);
+        }
 .div-img-detalle {
     max-height: 400px;
 }
