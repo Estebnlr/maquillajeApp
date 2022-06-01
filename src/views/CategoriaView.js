@@ -27,13 +27,14 @@ export default function CategoriaView() {
 
   return (
     <div className="row">     
-      <h1 className="mb-4">
-        {categoria.cat_nom}
-      </h1>
+      <h2 className="mb-4">
+        {categoria.cat_nom.toUpperCase()}
+      </h2>
       <div className="col-12 col-md-4">
         <CategoriasMenu />
       </div>
       <div className="col-12 col-md-8">
+      <br/>
         <h4 className="mb-3">Productos recomendados</h4>
         <div className="row">
         {categoria.productos.map(({prod_nom, prod_img, prod_prec, prod_id, categoriaId}, i) => (
@@ -43,7 +44,7 @@ export default function CategoriaView() {
               <Link className="btn" to={`/detallelugar/${categoriaId}/${prod_id}`}>
                 <img src={prod_img} className="card-img-top " alt={prod_nom} />
                 <div className="card-body">
-                  <h5 className="card-title text-dark">{prod_nom}</h5>
+                  <h5 className="card-text text-dark">{prod_nom}</h5>
                   <h5 className="card-text text-danger">
                     {prod_prec}
                   </h5>

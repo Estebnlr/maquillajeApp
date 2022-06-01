@@ -53,33 +53,32 @@ export default function DetalleProductoView() {
         
         <div className="card mt-3">
         <div className="card-body">
-          <h4 className="card-title" >{miProducto.prod_nom}</h4>
+          <h5 className="card-title" >{miProducto.prod_nom.toUpperCase()}</h5>
           <h4 className="card-title text-danger">{miProducto.prod_prec}</h4>
         <div>
           <div className="d-flex justify-content-between">
             <h2></h2>
             
               
-            <Link  to={`/categoria/${catId}`}>
-              <a className="btn btn-outline-danger"> <i className="fa-solid fa-circle-arrow-left" /> Regresar </a>  
+            <Link  to={`/categoria/${catId}`} className="btn btn-outline-danger">
+               <i className="fa-solid fa-circle-arrow-left" /> Regresar  
             </Link>
-            
-          
+   
           </div>
+          <br/>
           <div className="row mt-4">
             <div className="col-12 col-lg-8">
               <div className="img-fluid d-flex justify-content-center overflow-hidden div-img-detalle">
-                <img src={miProducto.prod_img} className="d-block w-50" alt={miProducto.prod_nom} />
+                <img src={miProducto.prod_img} className="card-x" alt={miProducto.prod_nom} />
               </div>
             </div>
             <div className="col-12 col-lg-4">
               <div className="card">
                 <div className="card-body">
                  
-                  <p className="lead-justify mt-3">{miProducto.prod_desc}</p>
-                  
-                
-                 
+                  <h6 >{miProducto.prod_desc}</h6>
+                  <br/>
+              
                   <div className="d-grid">
                     <button 
                        className="btn btn-outline-danger"
