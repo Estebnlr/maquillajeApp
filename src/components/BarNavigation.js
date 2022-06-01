@@ -19,7 +19,7 @@ export default function BarNavigation() {
         <Navbar.Collapse id="navbar">
           <Nav className="me-auto" >
             <Link className="nav-link" to="/">
-              <i className="fa-solid fa-house-chimney-window" /> Inicio
+              <i className="fa-solid fa-house-chimney-window" /> INICIO
             </Link>
             
           </Nav>
@@ -43,7 +43,7 @@ export default function BarNavigation() {
                       style={{borderRadius: "50%", width: "30px"}}
                       alt="foto usuario"
                     />
-                    <span>{user.displayName}</span>
+                    <span>{user.displayName.toUpperCase()}</span>
                   </div>
                 }
               >
@@ -51,7 +51,7 @@ export default function BarNavigation() {
               </NavDropdown>
             ):(
               <Link className="nav-link" to="/login">
-                <i className="fa-solid fa-user-large" /> Ingresa
+                <i className="fa-solid fa-user-large" /> INGRESA
                 </Link>
             )}
               {user ? (

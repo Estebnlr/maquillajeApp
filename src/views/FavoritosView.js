@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useSelector } from "react";
 import { FavoritosContext } from "../context/favoritosContext";
 
 export default function FavoritosView() {
@@ -32,6 +32,9 @@ export default function FavoritosView() {
                     <p className="card-text">
                       {item.prod_desc}
                     </p>
+                    <h5 className="card-text text-danger">
+                      {item.prod_prec}
+                     </h5>
                    
                   </div>
                 </div>
