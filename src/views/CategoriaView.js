@@ -46,7 +46,7 @@ export default function CategoriaView() {
                 <div className="card-body">
                   <h5 className="card-text text-dark">{prod_nom}</h5>
                   <h5 className="card-text text-danger">
-                    {prod_prec}
+                    $/. {prod_prec}
                   </h5>
                 </div> </Link>
               </div>
