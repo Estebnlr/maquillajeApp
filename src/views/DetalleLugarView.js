@@ -54,7 +54,7 @@ export default function DetalleProductoView() {
         <div className="card mt-3">
         <div className="card-body">
           <h5 className="card-title" >{miProducto.prod_nom.toUpperCase()}</h5>
-          <h4 className="card-title text-danger">$/. {miProducto.prod_prec}</h4>
+          <h4 className="card-title text-danger">$/ {miProducto.prod_prec}</h4>
         <div>
           <div className="d-flex justify-content-between">
             <h2></h2>

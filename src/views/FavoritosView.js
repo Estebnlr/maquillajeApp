@@ -33,7 +33,7 @@ export default function FavoritosView() {
                       {item.prod_desc}
                     </p>
                     <h5 className="card-text text-danger">
-                     $/. {item.prod_prec}
+                     $/ {item.prod_prec}
                      </h5>
                    
                   </div>
