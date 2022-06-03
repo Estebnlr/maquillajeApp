@@ -16,7 +16,7 @@ export default function FavoritosView() {
             <div className="card mb-3" key={i}>
               <div 
                 className="row" 
-                style={{ maxHeight: "500px", overflow:'hidden' }}
+                style={{ maxHeight: "600px", overflow:'hidden' }}
               >
                 <div className="col-md-4">
                   <img
