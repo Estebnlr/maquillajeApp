@@ -10,6 +10,11 @@
     object-fit: cover;
 }
 
+.d-block  {
+    min-height: 200px;
+    object-fit: cover;
+    
+}
 .card-xd:hover {
 
             transform: scale(1.05);
