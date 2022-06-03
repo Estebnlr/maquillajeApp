@@ -76,7 +76,7 @@ export default function DetalleProductoView() {
               <div className="card">
                 <div className="card-body">
                  
-                  <h6 >{miProducto.prod_desc}</h6>
+                  <p >{miProducto.prod_desc}</p>
                   <br/>
               
                   <div className="d-grid">

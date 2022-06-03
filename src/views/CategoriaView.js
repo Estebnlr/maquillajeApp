@@ -44,7 +44,7 @@ export default function CategoriaView() {
               <Link className="btn" to={`/detallelugar/${categoriaId}/${prod_id}`}>
                 <img src={prod_img} className="card-img-top " alt={prod_nom} />
                 <div className="card-body">
-                  <h5 className="card-text text-dark">{prod_nom}</h5>
+                  <h6 className="card-text text-dark">{prod_nom}</h6>
                   <h5 className="card-text text-danger">
                     $/ {prod_prec}
                   </h5>
