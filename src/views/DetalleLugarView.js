@@ -5,12 +5,6 @@ import { obtenerProductos } from "../services/lugarService";
 import { FavoritosContext } from "../context/favoritosContext";
 import { AuthContext } from "../context/authContext"; 
 
-import TextField from "@mui/material/TextField";
-import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
-import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
-import { DatePicker } from "@mui/x-date-pickers/DatePicker";
-import { crearReserva } from "../services/reservaService";
-import Swal from "sweetalert2"
 
 export default function DetalleProductoView() {
   const [miProducto, setMiProducto] = useState(null);
@@ -54,6 +48,7 @@ export default function DetalleProductoView() {
         <div className="card mt-3">
         <div className="card-body">
           <h5 className="card-title" >{miProducto.prod_nom.toUpperCase()}</h5>
+          <h2></h2>
           <h4 className="card-title text-danger">$/ {miProducto.prod_prec}</h4>
         <div>
           <div className="d-flex justify-content-between">
@@ -61,7 +56,7 @@ export default function DetalleProductoView() {
             
               
             <Link  to={`/categoria/${catId}`} className="btn btn-outline-danger">
-               <i className="fa-solid fa-circle-arrow-left" /> Regresar  
+               <i className="fa-solid fa-shapes" /> Ver más 
             </Link>
    
           </div>
@@ -74,9 +69,9 @@ export default function DetalleProductoView() {
             </div>
             <div className="col-12 col-lg-4">
               <div className="card">
-                <div className="card-body">
+                <div className="card-body" >
                  
-                  <p >{miProducto.prod_desc}</p>
+                  <p className="card-text">{miProducto.prod_desc}</p>
                   <br/>
               
                   <div className="d-grid">
@@ -98,6 +93,8 @@ export default function DetalleProductoView() {
       ) : (
         <p>Cargando ...</p>
       )}
+      
+      
     </>
   );
 }

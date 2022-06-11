@@ -13,7 +13,7 @@ export default function BarNavigation() {
     <Navbar bg="danger" variant="dark" >
       <Container>
         <Navbar.Brand>
-            Maquillaje App
+            
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar" />
         <Navbar.Collapse id="navbar">
@@ -45,7 +45,7 @@ export default function BarNavigation() {
               </NavDropdown>
             ):(
               <Link className="nav-link" to="/login">
-                <i className="fa-solid fa-user-large" /> INGRESA
+                <i className="fa-solid fa-user-large" /> INGRESAR
                 </Link>
             )}
               {user ? (

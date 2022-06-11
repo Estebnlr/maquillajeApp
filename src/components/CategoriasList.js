@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { obtenerCategorias } from "../services/categoriaService";
 import { Link } from "react-router-dom";
 
-
+import LugaresList from "./LugaresList";
 
 export default function CategoriasList() {
   const [misCategorias, setMisCategorias] = useState([]);
@@ -45,6 +45,8 @@ export default function CategoriasList() {
         ))}
       </div>
       
+      <LugaresList misCategorias={misCategorias} />
+
       
     </div>
   );
