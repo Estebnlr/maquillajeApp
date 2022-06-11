@@ -16,10 +16,16 @@ export default function LoginView() {
   }
 
   return (
-    <div>
+    <div className="row">
+    <div className="card-log">
+    
+      <div>
       <button className='btn btn-danger btn-lg' onClick={loguear}>
-      <i class="fa-brands fa-google"></i> Continuar con Google
+      <i class="fa-brands fa-google"></i>            Continuar con Google
       </button>
+      </div>
+      
+      </div>
     </div>
   )
 }

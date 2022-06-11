@@ -15,6 +15,10 @@
     object-fit: cover;
     
 }
+.card-log {
+    height: 466px;
+    
+}
 .card-xd:hover {
 
             transform: scale(1.05);
