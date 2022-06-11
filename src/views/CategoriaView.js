@@ -6,7 +6,7 @@ import CategoriasMenu from "../components/CategoriasMenu"
 export default function CategoriaView() {
   const [categoria, setCategoria] = useState(null)
 
-  const { catId } = useParams() //nos da los parametros de la URL
+  const { catId } = useParams()
   
   useEffect(() => {
     const getCategoria = async () => {
@@ -21,7 +21,7 @@ export default function CategoriaView() {
   },[catId])
 
   if(!categoria) {
-    //poner algo de carga, como mi estado de categoria es null, evitar tener errores al revisar propiedades como lug_nom
+ 
     return <h4>Cargando...</h4>
   }
 
@@ -41,7 +41,7 @@ export default function CategoriaView() {
             <div className="col-md-12 col-lg-4" key={i}>
 
               <div className="card-xd mb-3 ">
-              <Link className="btn" to={`/detallelugar/${categoriaId}/${prod_id}`}>
+              <Link className="btn" to={`/detalleproducto/${categoriaId}/${prod_id}`}>
                 <img src={prod_img} className="card-img-top " alt={prod_nom} />
                 <div className="card-body">
                   <h6 className="card-text text-dark">{prod_nom}</h6>

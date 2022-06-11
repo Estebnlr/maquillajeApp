@@ -45,7 +45,7 @@ export default function FavoritosView() {
         
       ) : (
         <h4>
-          Todavia no ha seleccionado lugares como favoritos
+          Todavia no ha seleccionado producto
         </h4>
       )}
       </div>

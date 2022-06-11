@@ -1,6 +1,6 @@
 import { useState, useEffect, useContext } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
-import { obtenerProductos } from "../services/lugarService";
+import { obtenerProductos } from "../services/productoService";
 
 import { FavoritosContext } from "../context/favoritosContext";
 import { AuthContext } from "../context/authContext"; 

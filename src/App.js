@@ -6,7 +6,7 @@ import { AuthContextProvider } from "./context/authContext"
 import ProtectedRoute from "./components/ProtectedRoute"
 import BarNavigation from "./components/BarNavigation"
 import HomeView from "./views/HomeView"
-import DetalleLugarView from "./views/DetalleLugarView"
+import DetalleProductoView from "./views/DetalleProductoView"
 import FavoritosView from "./views/FavoritosView"
 import LoginView from "./views/LoginView"
 import CategoriaView from "./views/CategoriaView"
@@ -20,7 +20,7 @@ export default function App() {
           <div className="container mt-4">
             <Routes>
               <Route path="/" element={<HomeView />} />
-              <Route path="/detallelugar/:catId/:prodId" element={<DetalleLugarView />} />
+              <Route path="/detalleproducto/:catId/:prodId" element={<DetalleProductoView />} />
               <Route path="/favoritos" element={<ProtectedRoute><FavoritosView /></ProtectedRoute>} />
               <Route path="/login" element={<LoginView />} />
               <Route path="/categoria/:catId" element={<CategoriaView />} />
