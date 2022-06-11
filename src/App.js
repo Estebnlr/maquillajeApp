@@ -10,6 +10,7 @@ import DetalleProductoView from "./views/DetalleProductoView"
 import FavoritosView from "./views/FavoritosView"
 import LoginView from "./views/LoginView"
 import CategoriaView from "./views/CategoriaView"
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -26,6 +27,8 @@ export default function App() {
               <Route path="/categoria/:catId" element={<CategoriaView />} />
             </Routes>
           </div>
+          <br/>
+          <Footer />
         </FavoritosContextProvider>
       </AuthContextProvider>
     </Router>
