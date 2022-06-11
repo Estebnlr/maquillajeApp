@@ -44,9 +44,16 @@ export default function FavoritosView() {
         </div>
         
       ) : (
-        <h4>
+        <div className="row">
+        <div className="card-fav">
+          <div>
+          <h4>
           Todavia no ha seleccionado productos <i className="fa-solid fa-basket-shopping" />
         </h4>
+          </div>
+        
+        </div>
+       </div>
       )}
       </div>
       </div>
