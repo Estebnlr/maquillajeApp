@@ -45,7 +45,7 @@ export default function FavoritosView() {
         
       ) : (
         <h4>
-          Todavia no ha seleccionado producto <i className="fa-light fa-basket-shopping" />
+          Todavia no ha seleccionado productos <i className="fa-solid fa-basket-shopping" />
         </h4>
       )}
       </div>
