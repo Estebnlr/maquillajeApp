@@ -1,3 +1,100 @@
+:root {
+    --color1: #2091f9;
+    --color2: #eb2d7f;
+    --color3: #252b42;
+}
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* si no encuentra una fuente usará la siguiente */
+    font-family: "Open Sans", Arial, sans-serif;
+    /* temporal */
+    /* border: 1px solid red; */
+    /* color: var(--color1); */
+}
+
+
+
+.slider {
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+   
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+    
+}
+
+.slider img {
+	width: 100%;
+    
+    
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+
+
+/* .slides2 {
+    display: grid;
+    grid-auto-flow: column;
+    
+    gap: 1rem;
+    overflow-y: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    
+}
+
+.slides2 > img {
+    scroll-snap-align: start;
+    
+}
+
+.slides2 img {
+    display: flex;
+    border-radius: 10px;
+    width:  540px;
+    object-fit: contain;
+    animation: cambio 20s infinite alternate linear;
+    
+}
+.slides2::-webkit-scrollbar {
+    display: none;
+    
+} */
+
+
+
+
+
 .card-text{
     text-align: justify;
 }
@@ -5,24 +102,33 @@
     height: 350px;
     object-fit: cover;
 }
-.card-img-top {
-    min-height: 300px;
-    object-fit: cover;
+
+.card-log {
+    height: 466px;
+    
 }
 .card-fav
 {
     height: 390px;
     
 }
+.card21{
+    text-align: center;
+}
+.card-foto{
+    height: 300px;
+    
+}
+/* .card-img-top {
+    min-height: 100%;
+    object-fit: cover;
+} */
 .d-block  {
     min-height: 200px;
     object-fit: cover;
     
 }
-.card-log {
-    height: 466px;
-    
-}
+
 .card-xd:hover {
 
             transform: scale(1.05);
@@ -34,7 +140,6 @@
 .img-detalle {
     object-fit: cover;
 }
-
 
 
 .card-categoria {
@@ -77,4 +182,58 @@ a {
     font-weight:bold;
 }
 
+.me-auto {
+    
+    color:black;
+   
+}
 
+.card2 {
+    height: 300px;
+    width: 300px;
+    border-radius: 4px;
+
+    display: grid;
+    place-items: center;
+    grid-template-areas: "main";
+
+    overflow: hidden;
+    cursor: pointer;
+    text-decoration: none;
+}
+.card2 .image{
+    min-height: 100px;
+    object-fit: cover;
+}
+
+.card2 >  * {
+    grid-area: main;
+}
+
+.card2 > .image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+
+    transition: transform 400ms, filter 400ms;
+}
+
+.card2 > .text {
+    opacity: 0;
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    padding: 2em;
+    transition: opacity 400ms,  tranform 400ms;
+
+}
+
+.card2:is(:hover, :focus) > .image {
+    transform: scale(1.1);
+    filter: brightness(0.4);
+  }
+
+.card2:is(:hover, :focus) > .text{
+    transform: scale(1.05);
+    opacity: 1;
+  } 

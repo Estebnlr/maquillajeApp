@@ -1,12 +1,18 @@
-import { useContext, useSelector } from "react";
+import { useContext} from "react";
+// import CarritoCompra from "../components/CarritoCompra"
 import { FavoritosContext } from "../context/favoritosContext";
 
+
 export default function FavoritosView() {
-  const { favoritos } = useContext(FavoritosContext);
+
+
+const { favoritos } = useContext(FavoritosContext);
+
 
   return (
+   
     <>
-
+ 
       <div className="card mt-3">
         <div className="card-body">
           <h4 className="card-title">Productos</h4>
@@ -21,7 +27,7 @@ export default function FavoritosView() {
                 <div className="col-md-4">
                   <img
                     src={item.prod_img}
-                    className="d-block w-50"
+                    className="d-block w-50 "
                     alt={item.prod_nom}
                   />
                 </div>
@@ -33,16 +39,31 @@ export default function FavoritosView() {
                       {item.prod_desc}
                     </p>
                     <h5 className="card-text text-danger">
-                     $/ {item.prod_prec}
+                      $/{item.prod_prec} 
+                      
                      </h5>
-                   
+                     
                   </div>
                 </div>
+
+
               </div>
             </div>
+
           ))}
-        </div>
+       
+        <div className="card mt-3 " >
+       
+        <div className="card-body">
+        <h4 className="card-title text-center">Total</h4>
         
+        </div>
+      
+        </div> 
+                   
+        </div>
+       
+
       ) : (
         <div className="row">
         <div className="card-fav">

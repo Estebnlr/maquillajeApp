@@ -21,7 +21,7 @@ export default function CategoriaView() {
   },[catId])
 
   if(!categoria) {
- 
+  
     return <h4>Cargando...</h4>
   }
 
@@ -43,13 +43,15 @@ export default function CategoriaView() {
               <div className="card-xd mb-3 ">
               <Link className="btn" to={`/detalleproducto/${categoriaId}/${prod_id}`}>
                 <img src={prod_img} className="card-img-top " alt={prod_nom} />
-                <div className="card-body">
+                </Link>
+              </div>
+              <div className="card-body">
                   <h6 className="card-text text-dark">{prod_nom}</h6>
                   <h5 className="card-text text-danger">
                     $/ {prod_prec}
                   </h5>
-                </div> </Link>
-              </div>
+                </div> 
+
             </div>
           ))}
         </div>
