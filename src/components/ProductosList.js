@@ -10,17 +10,18 @@ export default function ProductosList({ misCategorias })
       {arrProductos.map(({ prod_nom, prod_prec, prod_img, categoriaId, prod_id }, i) => (
         <div className="col-12 col-md-6 col-lg-3" key={i}>
 
-          <div className="card-xd mb-3 ">
-             <Link className="btn" to={`/detalleproducto/${categoriaId}/${prod_id}`}>
-                <img src={prod_img} className="card-img-top " alt={prod_nom} />
-                <div className="card-body">
-                  <h6 className="card-text text-dark">{prod_nom}</h6>
-                  <h5 className="card-text text-danger">
+        
+          <Link className="card2" to={`/detalleproducto/${categoriaId}/${prod_id}`}>
+                <img src={prod_img} className="image " alt={prod_nom} />
+               
+                <h4 className="text">
+                <p>{prod_nom}</p>
                     $/ {prod_prec}
-                  </h5>
-                </div> </Link>
-              </div>
-          
+                </h4>
+             
+               
+               </Link>
+               
         </div>
       ))}
     </div>

@@ -24,7 +24,7 @@ export default function CategoriasMenu() {
       <ul className="list-group menu-categorias">
         {categorias.map(({cat_nom, cat_id}, i) => (
           <li className="btn btn-outline-light" key={i}>
-            <Link className="btn btn-outline-light" to={`/categoria/${cat_id}`}>
+            <Link to={`/categoria/${cat_id}`}>
               {cat_nom}
             </Link>
           </li>

@@ -5,7 +5,6 @@ import { obtenerProductos } from "../services/productoService";
 import { FavoritosContext } from "../context/favoritosContext";
 import { AuthContext } from "../context/authContext"; 
 
-
 export default function DetalleProductoView() {
   const [miProducto, setMiProducto] = useState(null);
   

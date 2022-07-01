@@ -29,8 +29,15 @@ export default function App() {
           </div>
           <br/>
           <Footer />
+        
+        
         </FavoritosContextProvider>
       </AuthContextProvider>
+      
     </Router>
+    
+    
+    
+
   )
 }
